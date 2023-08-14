@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* .customContainer {
+  @apply container mx-auto px-6 lg:px-8 2xl:px-[120px]
+} */
+
+@media screen and (min-width: 1080px) {
+  .banner {
+    padding: 40px 72px 24px;
+  }
+  .banner_Image {
+    width: 683px;
+    height: 378px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media screen and (max-width: 1079px) {
+  .banner {
+    padding: 40px 72px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 72px 116px 24px;
+  }
+  .banner_Image {
+    width: 438px;
+    height: 238px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    padding: 64px 16px 0px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .banner_Image {
+    width: 328px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 320px) {
 }
