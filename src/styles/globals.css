@@ -9,9 +9,6 @@
   color: #25252e;
 }
 
-/* .customContainer {
-  @apply container mx-auto px-6 lg:px-8 2xl:px-[120px]
-} */
 
 @media screen and (min-width: 1440px) {
   .nsLogo {
