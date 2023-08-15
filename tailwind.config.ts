@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         large_Ns: "1920px",
+        extraBig_Ns:"1600px",
         big_Ns: "1440px",
         md_Ns: "425px",
         smd_Ns: "375px",

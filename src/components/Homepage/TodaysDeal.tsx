@@ -9,14 +9,14 @@ const TodaysDeal: React.FC = () => {
   // Function to handle left pagination
   const handlePaginationLeft = () => {
     if (startIndex > 0) {
-      setStartIndex(startIndex - 1); 
+      setStartIndex(startIndex - 1);
     }
   };
 
   // Function to handle right pagination
   const handlePaginationRight = () => {
     if (startIndex < todaysDeal.length - 6) {
-      setStartIndex(startIndex + 1); 
+      setStartIndex(startIndex + 1);
     }
   };
 
@@ -72,9 +72,9 @@ const TodaysDeal: React.FC = () => {
                 <path
                   d="M5.5 13L10.5 8L5.5 3"
                   stroke="#0072BC"
-                  stroke-width="1.2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -116,9 +116,9 @@ const TodaysDeal: React.FC = () => {
               <path
                 d="M5.5 13L10.5 8L5.5 3"
                 stroke="#0072BC"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
