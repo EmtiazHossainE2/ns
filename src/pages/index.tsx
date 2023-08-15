@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Banner } from "@/components/Homepage";
+import { Banner, TodaysDeal } from "@/components/Homepage";
 import MainLayout from "@/components/layout/MainLayout";
 import Head from "next/head";
 import type { NextPageWithLayout } from "./_app";
@@ -17,6 +17,7 @@ const HomePage: NextPageWithLayout = () => {
 
       {/* Main Components Start */}
       <Banner />
+      <TodaysDeal/>
       {/* Main Components End */}
     </>
   );

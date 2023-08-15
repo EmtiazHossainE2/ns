@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
@@ -13,16 +13,15 @@ const config: Config = {
         big_Ns: "1440px",
         md_Ns: "425px",
         smd_Ns: "375px",
-        sm_Ns:"320px",
-        xs_Ns:"300px",
+        sm_Ns: "320px",
+        xs_Ns: "300px",
       },
       colors: {
-        primary: "#6366F1",
-        primary_bold: "#4F46E5",
+        primary: "#25252E",
         secondary: "#333333",
       },
     },
   },
   plugins: [],
 };
-export default config
+export default config;

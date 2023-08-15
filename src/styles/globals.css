@@ -26,30 +26,43 @@
   .banner {
     padding: 40px 72px 24px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .banner {
-    padding: 72px 116px 24px;
-  }
   .banner_Image {
     width: 438px;
     height: 238px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 72px 116px 24px;
+  }
+  .product_Image{
+    width: 168px;
+    height: 168px;
+  }
+  
+}
+
 @media screen and (max-width: 576px) {
   .banner {
     padding: 64px 16px 0px;
   }
+  
 }
 @media screen and (max-width: 425px) {
   .banner_Image {
     width: 328px;
     height: 180px;
   }
+  .product_Image{
+    width: 104px;
+    height: 104px;
+  }
+  
 }
 @media screen and (max-width: 375px) {
+  
+  
 }
 @media screen and (max-width: 320px) {
 }
