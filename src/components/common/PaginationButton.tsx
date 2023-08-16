@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 interface PaginationButtonProps {
-  onClick: () => void;
-  iconSrc: string;
-  iconAlt: string;
-  iconWidth: number;
+  onClick: () => void
+  iconSrc: string
+  iconAlt: string
+  iconWidth: number
 }
 
 const PaginationButton: React.FC<PaginationButtonProps> = ({
@@ -15,9 +15,9 @@ const PaginationButton: React.FC<PaginationButtonProps> = ({
 }) => (
   <button
     onClick={onClick}
-    className="relative flex items-center hover:border-[#0B80CC] rounded-full hover:border"
+    className="relative flex items-center rounded-full hover:border hover:border-[#0B80CC]"
   >
-    <div className="absolute left-1/2 transform -translate-x-1/2">
+    <div className="absolute left-1/2 -translate-x-1/2 transform">
       <Image src={iconSrc} alt={iconAlt} width={iconWidth} height={20} />
     </div>
     <svg
@@ -30,6 +30,6 @@ const PaginationButton: React.FC<PaginationButtonProps> = ({
       <circle cx="20" cy="20" r="20" fill="#F4F5F9" />
     </svg>
   </button>
-);
+)
 
-export default PaginationButton;
+export default PaginationButton

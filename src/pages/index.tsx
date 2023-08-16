@@ -1,8 +1,8 @@
-import type { ReactElement } from "react";
-import { Banner, TodaysDeal } from "@/components/Homepage";
-import MainLayout from "@/components/layout/MainLayout";
-import Head from "next/head";
-import type { NextPageWithLayout } from "./_app";
+import type { ReactElement } from 'react'
+import { Banner, TodaysDeal, TooltipButtons } from '@/components/Homepage'
+import MainLayout from '@/components/layout/MainLayout'
+import Head from 'next/head'
+import type { NextPageWithLayout } from './_app'
 
 const HomePage: NextPageWithLayout = () => {
   return (
@@ -17,14 +17,15 @@ const HomePage: NextPageWithLayout = () => {
 
       {/* Main Components Start */}
       <Banner />
-      <TodaysDeal/>
+      <TodaysDeal />
+      <TooltipButtons />
       {/* Main Components End */}
     </>
-  );
-};
+  )
+}
 
 HomePage.getLayout = function getLayout(page: ReactElement) {
-  return <MainLayout>{page}</MainLayout>;
-};
+  return <MainLayout>{page}</MainLayout>
+}
 
-export default HomePage;
+export default HomePage

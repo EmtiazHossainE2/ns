@@ -9,6 +9,12 @@
   color: #25252e;
 }
 
+/* Tooltip  Start*/
+.tooltip_shadow {
+  box-shadow: 0px 6px 20px 0px rgba(60, 65, 115, 0.25);
+}
+
+/* Tooltip End */
 
 @media screen and (min-width: 1440px) {
   .nsLogo {
@@ -65,7 +71,6 @@
     width: 168px;
     height: 168px;
   }
-
 }
 
 @media screen and (max-width: 576px) {

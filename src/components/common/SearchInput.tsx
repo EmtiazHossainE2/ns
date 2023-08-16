@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const SearchInput: React.FC = () => {
-  const [isToggleOn, setIsToggleOn] = useState(false);
+  const [isToggleOn, setIsToggleOn] = useState(false)
 
   // Function to toggle the "All" button
   const handleToggle = () => {
-    setIsToggleOn(!isToggleOn);
-  };
+    setIsToggleOn(!isToggleOn)
+  }
 
   return (
-    <div className="flex items-center border rounded-lg p-2 md:w-full lg:w-[320px] xl:w-[420px] big_Ns:w-[575px] extraBig_Ns:w-[676px] large_Ns:w-[825px] h-[48px] bg-[#F4F5F9]">
+    <div className="flex h-[48px] items-center rounded-lg border bg-[#F4F5F9] p-2 md:w-full lg:w-[320px] xl:w-[420px] big_Ns:w-[575px] extraBig_Ns:w-[676px] large_Ns:w-[825px]">
       {/* Search icon */}
-      <div className="flex items-center justify-center w-12 h-12 ">
+      <div className="flex h-12 w-12 items-center justify-center ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
@@ -39,13 +39,13 @@ const SearchInput: React.FC = () => {
       <input
         type="text"
         placeholder="Search"
-        className="flex-grow py-1 outline-none bg-transparent text-[#81818F]"
+        className="flex-grow bg-transparent py-1 text-[#81818F] outline-none"
       />
       {/* "All" button */}
       <button
         onClick={handleToggle}
-        className={`flex items-center justify-center w-12 h-12 ${
-          isToggleOn ? " text-white" : ""
+        className={`flex h-12 w-12 items-center justify-center ${
+          isToggleOn ? ' text-white' : ''
         }`}
       >
         {/* Text next to the "All" button */}
@@ -68,7 +68,7 @@ const SearchInput: React.FC = () => {
         </svg>
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default SearchInput;
+export default SearchInput
